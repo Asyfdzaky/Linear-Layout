@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_toStartOf="@id/text_judul"
+        android:layout_marginEnd="10sp"
+        android:layout_alignTop="@id/text_judul"
+        android:layout_alignBottom="@id/text_judul"
+        app:tint="@color/yellow" />
+    <TextView
+        android:id="@+id/text_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/yellow"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/poppins_regular"
+
+        />
+
+    <ImageView
+        android:id="@+id/more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_more_vert_24"
+        android:layout_toEndOf="@id/text_judul"
+        android:layout_marginStart="10sp"
+        android:layout_alignTop="@id/text_judul"
+        android:layout_alignBottom="@id/text_judul"
+        app:tint="@color/yellow" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:layout_below="@id/text_judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:thumbTint="@color/yellow"
+        android:progressTint="@color/yellow"
+        android:progressBackgroundTint="@color/yellow"
+        />
+    <TextView
+        android:id="@+id/lirik1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lirik1"
+        android:textSize="24sp"
+        android:layout_below="@id/seekbar"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/orange"/>
+    <TextView
+        android:id="@+id/lirk2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lirik2"
+        android:textSize="24sp"
+        android:layout_below="@id/lirik1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/yellow"/>
+
+    <ImageView
+        android:id="@+id/skip_prev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lirk2"
+        android:layout_alignTop="@id/play_btn"
+        android:layout_alignBottom="@id/play_btn"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@id/play_btn"
+        android:src="@drawable/baseline_skip_previous_24"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lirk2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_play_circle_filled_24"
+        app:tint="@color/orange" />
+
+    <ImageView
+        android:id="@+id/skip_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lirk2"
+        android:layout_alignTop="@id/play_btn"
+        android:layout_alignBottom="@id/play_btn"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/play_btn"
+        android:src="@drawable/baseline_skip_next_24"
+        app:tint="@color/white" />
+</RelativeLayout>
